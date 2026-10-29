@@ -1,0 +1,9 @@
+Changes dated 2026-10-29; see ../../rastadoom/PROVENANCE.md.
+
+src/pd_render.cpp
+src/d_loop.c
+opl/slot_render.cpp
+opl/slot_render_pico.S
+src/doom/f_finale.c
+src/doom/p_saveg.c
+src/doom/m_menu.c
