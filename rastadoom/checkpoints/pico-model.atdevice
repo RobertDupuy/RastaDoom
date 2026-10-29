@@ -1,0 +1,40 @@
+// Test-only Pico memory/protocol adapter. The delivered CAR is unmodified.
+// The host fills the back bank with actual ARM firmware output while paused.
+option "name": "A8PicoCart DOOM protocol model";
+Segment windows: { size: $8000, source: "pico-windows.bin", persistence: "nonvolatile" };
+Segment regs: { size: $100 };
+MemoryLayer cartridge: {
+ name: "Pico selected 16K ROM", address: $8000, size: $4000,
+ segment: { source: windows, mode: "ro" }, cart_mode: "auto"
+};
+MemoryLayer host_windows: {
+ name: "Test host back-bank access", address: $100000, size: $8000,
+ fast: true, segment: { source: windows, mode: "rw" }
+};
+MemoryLayer host_regs: {
+ name: "Test host mailbox access", address: $108000, size: $100,
+ fast: true, segment: { source: regs, mode: "rw" }
+};
+MemoryLayer cctl: {
+ name: "Pico mailbox", address: $d500, size: $100,
+ control: [
+  { address: $d500, size: $100, mode: "r", script: function {
+    if (($address & 255) == $80) return $18;
+    return regs.read_byte($address & 255);
+  } },
+  { address: $d500, size: $100, mode: "w", script: function {
+    int a = $address & 255;
+    regs.write_byte(a, $value);
+    if (a == $fe && $value == $a5 && regs.read_byte($fd) == 1) {
+      cartridge.set_offset(regs.read_byte($fc) << 14);
+      regs.write_byte($fb, regs.read_byte($fc));
+      regs.write_byte($f4, (regs.read_byte($f4) + 1) & 255);
+      regs.write_byte($fd, 0);
+    }
+  } }
+ ], cart_mode: "auto"
+};
+event "cold_reset": function {
+ cartridge.set_offset(0);
+ cartridge.set_modes(1,1);
+};
