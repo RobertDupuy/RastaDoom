@@ -1,0 +1,1 @@
+font.bin is an ASCII-reindexed copy of src/Kernel/source/Shared/atarifont.bin in Altirra 4.40 source, by Avery Lee. Distributed under GPL version 2 or later; see COPYING.md in the source root.
