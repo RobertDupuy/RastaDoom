@@ -1,0 +1,10 @@
+# Generated builds and local test output
+/build-*/
+/dist/
+/test-*/
+/new-checks/
+__pycache__/
+*.pyc
+server-private.log
+*.token
+.DS_Store
