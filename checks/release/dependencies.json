@@ -1,0 +1,7 @@
+{
+  "pico_sdk_commit": "bddd20f928ce76142793bef434d4f75f4af6e433",
+  "rp2040js_commit": "5fbd20508a58b9859758c5cd70b207ba1e0b0150",
+  "altirrasdl_commit": "288e2b03edf29d97d2c53b7b3e77335862e2e645",
+  "node": "v24.22.1",
+  "arm_gcc": "arm-none-eabi-gcc (15:13.2.rel1-2) 13.2.1 20231009"
+}

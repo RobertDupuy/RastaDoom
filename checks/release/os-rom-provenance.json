@@ -1,0 +1,9 @@
+{
+  "source": "https://atari8.co.uk/wp-content/uploads/U1MB_Firmware_4.20_240123.zip",
+  "member": "ROM/U1MBS3.ROM",
+  "offset": "0x70000",
+  "size": 16384,
+  "crc32": "29f133f7",
+  "sha256": "942b8038a8b88f4914bd624ce107835058ddaa7c85ce9d431c667e5813ff4ffb",
+  "id": "8502424200000103757018c0aac22cc0"
+}

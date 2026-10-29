@@ -1,0 +1,8 @@
+{
+  "clean_source_archive_rebuild_identical": {
+    "A8PicoCart-DOOM-0.6.0.uf2": true,
+    "DOOM.CAR": true
+  },
+  "compiler": "arm-none-eabi-gcc 13.2.1",
+  "uf2_sha256": "63b6add566f662d33956d73d973f6e0a6bd596a09a266b67587ec5d3b44aa00c"
+}

@@ -1,0 +1,10 @@
+{"read":"S4","cycles":1,"value":90}
+{"read":"S5","cycles":1,"value":195}
+ANTIC_CONTINUOUS_SELECT_OK: 128 address changes, both banks, PHI2 high and low
+{"read":"pending-empty","cycles":25,"value":0}
+{"read":"pending-full","cycles":25,"value":1}
+{"read":"pcm-empty","cycles":25,"value":24}
+{"read":"pcm-prefetch","cycles":34,"value":24}
+{"read":"pcm-sample","cycles":27,"value":28}
+{"read":"keyboard","cycles":25,"value":135}
+CART_BUS_OK {"worst_modeled_cycles":34,"modeled_ns_at_250MHz":136}
