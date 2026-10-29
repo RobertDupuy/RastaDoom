@@ -1,0 +1,21 @@
+{
+  "version": "0.6.0",
+  "car_type": 2,
+  "car_bytes": 16400,
+  "sha256": "bc44a3fc77e370115ca496830058b314358d6a384de34ddbf5274b96d29b2d80",
+  "diagnostic_screens": false,
+  "timed_startup_pauses": false,
+  "kernel_return": "0x2144",
+  "labels": {
+    "client_start": 8192,
+    "enter_raster": 8513,
+    "frame_end": 8516,
+    "frame_router": 9216,
+    "hold": 8538,
+    "launch_request": 8209,
+    "live_frame_end": 9240,
+    "live_select": 9274,
+    "live_sync": 9368,
+    "poll_input": 9403
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "version": "0.6.0",
+  "menu_file": "DOOM.CAR",
+  "diagnostic_screens": false,
+  "base_sha256": "3364a0ba142b59790bc6f16f0ceacd2a63616e6e4869fa44a1e4ec18f17e9789",
+  "original_changed_offsets": [
+    "0x13428",
+    "0x13429",
+    "0x1342a",
+    "0x1342b",
+    "0x1342c",
+    "0x1342d",
+    "0x1342e",
+    "0x1342f"
+  ],
+  "original_handler_sram": "0x200001d0",
+  "relocated_original_handler_sram": "0x20038000",
+  "original_bss_end": "0x20036528",
+  "engine_bytes": 432376,
+  "hook_bytes": 4148,
+  "uf2_bytes": 5521408,
+  "highest_programmed_address": "0x10ffffff",
+  "uf2_sha256": "63b6add566f662d33956d73d973f6e0a6bd596a09a266b67587ec5d3b44aa00c",
+  "car_sha256": "bc44a3fc77e370115ca496830058b314358d6a384de34ddbf5274b96d29b2d80",
+  "physical_tested": false,
+  "functional_test_results": "checks/release/verification.json"
+}
